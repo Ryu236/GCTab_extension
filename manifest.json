@@ -1,0 +1,11 @@
+{
+    "name": "Switch/Open Google Calendar Tab",
+    "version": "1.0",
+    "description": "Select Google Calendar tab on Google Chrome.",
+    "permissions": ["storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "manifest_version": 2
+}
