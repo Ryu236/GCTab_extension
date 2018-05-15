@@ -3,8 +3,8 @@ chrome.commands.onCommand.addListener(function(command) {
         if (results.length == 0) {
             chrome.tabs.create({url: 'https://calendar.google.com/'});
         } else {
-            chrome.tabs.update(results[0].id, {"selected": true});
-            chrome.windows.update(results[0].windowId, {"focused": true});
+            chrome.tabs.update(results[0].id, {selected: true});
+            chrome.windows.update(results[0].windowId, {focused: true});
         }
     });
 });
