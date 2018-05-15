@@ -1,11 +1,23 @@
 {
     "name": "Switch/Open Google Calendar Tab",
     "version": "1.0",
+    "manifest_version": 2,
     "description": "Select Google Calendar tab on Google Chrome.",
-    "permissions": ["storage"],
+    "permissions": [
+        "tabs"
+    ],
     "background": {
         "scripts": ["background.js"],
         "persistent": false
     },
-    "manifest_version": 2
+    "commands": {
+        "toggle_function": {
+            "suggested_key": {
+                "default": "Ctrl+C",
+                "mac": "MacCtrl+C"
+            },
+            "description": "Toggle function by commands",
+            "global": false
+        }
+    }
 }

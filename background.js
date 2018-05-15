@@ -1,5 +1,10 @@
-chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({color: '#3aa757'}, function() {
-        console.log("The color is green.");
+chrome.commands.onCommand.addListener(function(command) {
+    chrome.tabs.query({url: "https://calendar.google.com/*"}, function(results) {
+        if (results.length == 0) {
+            chrome.tabs.create({url: 'https://calendar.google.com/'});
+        } else {
+            chrome.tabs.update(results[0].id, {"selected": true});
+            chrome.windows.update(results[0].windowId, {"focused": true});
+        }
     });
 });
