@@ -6,6 +6,9 @@
     "permissions": [
         "tabs"
     ],
+    "icons": {
+        "128": "/image/google_calendar.png"
+    },
     "background": {
         "scripts": ["background.js"],
         "persistent": false
