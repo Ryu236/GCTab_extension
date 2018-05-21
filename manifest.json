@@ -7,6 +7,8 @@
         "tabs"
     ],
     "icons": {
+        "16": "/image/google_calendar16.png",
+        "48": "/image/google_calendar48.png",
         "128": "/image/google_calendar.png"
     },
     "background": {
